@@ -40,6 +40,7 @@ class Product {
         this.quantity = quantity;
     }
 
+    @Override
     public String toString() {
         return String.format("%s\nR$%.2f\nQuantidade: %d", this.getName(), this.getPrice(), this.getQuantity());
     }
