@@ -9,7 +9,7 @@ public class Exercise4 {
 
         out.print("Digite a quantidade de números: ");
         int qnt = scan.nextInt();
-        int number = 0;
+        int number = 2;
 
         for (int i = 0; i < qnt;) {
             boolean isPrime = true;
