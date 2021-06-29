@@ -9,7 +9,7 @@ import static java.lang.System.out;
 
 class Data {
     private GregorianCalendar data = new GregorianCalendar();
-    private DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+    private DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
     public GregorianCalendar getData() {
         return data;
@@ -29,11 +29,13 @@ class Data {
         data.add(GregorianCalendar.DAY_OF_YEAR, 1);
     }
 
-    public static void verificaData(int dia, int mes, int ano) {
+    public static void verificaData(String data) {
         try {
-            Date g = new GregorianCalendar(ano, mes, dia).getTime();
+            DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+            dateFormat.setLenient(false);
 
-            out.println(g);
+            dateFormat.parse(data);
+
             out.println("Data passada é valida");
         } catch (Exception err) {
             out.println("Data passada é invalida");
@@ -58,7 +60,7 @@ public class Exercise5 {
 
         out.println(currentData);
 
-        Data.verificaData(10, 11, 1918);
-        Data.verificaData(11, 14, 1992);
+        Data.verificaData("10/11/1998");
+        Data.verificaData("11/14/2012");
     }
 }

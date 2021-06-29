@@ -13,6 +13,7 @@ public class Program {
         out.println("3 - Livros");
         out.println("4 - Fração");
         out.println("5 - Datas");
+        out.println("6 - String utils");
         out.println("0 - Sair");
         out.println();
 
@@ -31,8 +32,14 @@ public class Program {
                 case 3:
                     Exercise3.exec();
                     break;
+                case 4:
+                    Exercise4.exec();
+                    break;
                 case 5:
                     Exercise5.exec();
+                    break;
+                case 6:
+                    Exercise6.exec();
                     break;
                 case 0:
                     return;
