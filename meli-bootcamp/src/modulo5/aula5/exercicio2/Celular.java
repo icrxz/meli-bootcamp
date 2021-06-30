@@ -1,5 +1,7 @@
 package modulo5.aula5.exercicio2;
 
+import java.util.Comparator;
+
 public class Celular implements Precedente<Celular> {
     private String numero;
     private String holder;
@@ -29,7 +31,8 @@ public class Celular implements Precedente<Celular> {
 
     @Override
     public int precedeA(Celular celular) {
-        return this.numero.compareToIgnoreCase(celular.getNumero());
+        Comparator<Celular> comparaPeloNumero = Comparator.comparing(Celular::getNumero);
+        return comparaPeloNumero.compare(this, celular);
     }
 
     @Override

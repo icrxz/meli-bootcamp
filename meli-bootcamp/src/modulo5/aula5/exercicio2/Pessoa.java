@@ -1,5 +1,7 @@
 package modulo5.aula5.exercicio2;
 
+import java.util.Comparator;
+
 public class Pessoa implements Precedente<Pessoa> {
     private String nome;
     private String cpf;
@@ -29,7 +31,8 @@ public class Pessoa implements Precedente<Pessoa> {
 
     @Override
     public int precedeA(Pessoa pessoa) {
-        return this.cpf.compareTo(pessoa.getCpf());
+        Comparator<Pessoa> comparaPeloCpf = Comparator.comparing(Pessoa::getCpf);
+        return comparaPeloCpf.compare(this, pessoa);
     }
 
     @Override
