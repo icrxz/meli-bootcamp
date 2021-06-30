@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class GuardaRoupa {
     private Map<Integer, List<Vestuario>> dictionary = new HashMap<>();
-    private static int counter = 1;
+    private int counter = 1;
 
     public Integer guardarVestuarios(List<Vestuario> listaDeVestuario) {
         dictionary.put(counter, listaDeVestuario);
