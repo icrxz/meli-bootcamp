@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>modulo5.dakar</OriginalElement>
+  <nodes>
+    <node x="363.5" y="672.0">modulo5.dakar.SocorristaMoto</node>
+    <node x="0.0" y="771.0">modulo5.dakar.Program</node>
+    <node x="152.5" y="0.0">modulo5.dakar.Veiculo</node>
+    <node x="53.5" y="672.0">modulo5.dakar.SocorristaCarro</node>
+    <node x="643.0" y="0.0">modulo5.dakar.Corrida</node>
+    <node x="0.0" y="546.0">modulo5.dakar.Carros</node>
+    <node x="310.0" y="546.0">modulo5.dakar.Motos</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="modulo5.dakar.SocorristaMoto" target="modulo5.dakar.Motos">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="modulo5.dakar.Carros" target="modulo5.dakar.Veiculo">
+      <point x="0.0" y="-38.0" />
+      <point x="145.0" y="521.0" />
+      <point x="226.0" y="521.0" />
+      <point x="-73.5" y="248.0" />
+    </edge>
+    <edge source="modulo5.dakar.Motos" target="modulo5.dakar.Veiculo">
+      <point x="0.0" y="-38.0" />
+      <point x="454.0" y="521.0" />
+      <point x="373.0" y="521.0" />
+      <point x="73.5" y="248.0" />
+    </edge>
+    <edge source="modulo5.dakar.SocorristaCarro" target="modulo5.dakar.Carros">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7479289940828402" x="503.0" y="412.5" />
+  <SelectedNodes>
+    <node>modulo5.dakar.SocorristaMoto</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
