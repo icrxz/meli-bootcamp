@@ -1,0 +1,9 @@
+package com.meli.api.diplomatests.repository;
+
+import com.meli.api.diplomatests.entity.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface StudentRepository extends JpaRepository<Student, Long> {
+}
